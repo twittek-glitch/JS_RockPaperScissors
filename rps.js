@@ -57,7 +57,7 @@ function getPlayerChoice(){
 
 
 ////////////////////////////////////////////
-// 3. Compare Choices to Determine Winner
+// 3. Play Round
 function playRound(){
     let playerChoice = getPlayerChoice();
     let compChoice = getCompChoice();
@@ -82,7 +82,7 @@ function playRound(){
     else {
         console.log("Computer wins! " + compChoice + " beats "+ playerChoice + "!");
         result = "compWin";
-        //console.log(result)
+        //console.log(result)g
         return result;
         }
     }
@@ -90,8 +90,8 @@ function playRound(){
 
 
 
-
-// 4. Declare Round Winner and Overall Score 
+/////////////////////////////////////
+// 4. Play 5-Round Game 
 function playGame(){
     let playerScore = 0;
     let computerScore = 0;
@@ -119,5 +119,4 @@ function playGame(){
     console.log("COMPUTER: " + computerScore)
     }
 
-    
 playGame();
